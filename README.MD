@@ -1,4 +1,4 @@
-# Nfc Tile
+# NFC Tile
 
 A minimalist app to add an NFC tile to Android Quick Settings.
 
@@ -11,21 +11,21 @@ A minimalist app to add an NFC tile to Android Quick Settings.
 ## Features
 
 - **Minimal size** - ~12 KB for NoLauncher versions
-- **Maximum mimicry** - the tile looks native on stock Android
+- **System-like behavior** - blends in with other Quick Settings tiles in appearance and function
 - **No background processes** - works only when needed
-- **Can work fully without Root** - just grant permission via ADB
+- **Works without Root** - just grant permission via ADB
 
-## Why?
+## Overview
 
-Primarily for stock Android devices (AOSP-based) like Google Pixel and others that lack a built-in NFC tile. If your device with an Android skin also doesn't have a system NFC tile, the app should work there too, though the icon may stand out slightly.
+Designed for AOSP-based devices (e.g. Pixel) that don’t include a native NFC tile. Expected to work on most OEM skins, though the icon may look slightly different.
 
 ## Choosing a Version
 
 | Version | Differences |
 |:-------:|-------------|
-| [**Regular**](../../releases/latest/download/NFC_Tile.apk)<br>Android&nbsp;7.0+ | Has launcher icon and instruction dialog for granting permission |
-| [**NoLauncher**](../../releases/latest/download/NFC_Tile_NoLauncher.apk)<br>Android&nbsp;8.0+ | No launcher icon, no instruction dialog |
-| [**NoSubtitle**](../../releases/latest/download/NFC_Tile_NoLauncher_New.apk)<br>Android&nbsp;8.0+ | Same as NoLauncher, but without subtitle. For Android 16+ with the new Quick Settings design. If your system tiles don't have "On/Off" subtitles, use this version. See screenshots for details |
+| [**Regular**](../../releases/latest/download/NFC_Tile.apk)<br>Android&nbsp;7.0+ | Has launcher icon and instruction dialog for granting permission. |
+| [**NoLauncher**](../../releases/latest/download/NFC_Tile_NoLauncher.apk)<br>Android&nbsp;8.0+ | No launcher icon, no instruction dialog. |
+| [**NoSubtitle**](../../releases/latest/download/NFC_Tile_NoLauncher_New.apk)<br>Android&nbsp;8.0+ | Same as NoLauncher, but without subtitle. For Android 16+ with the new Quick Settings design. If your system tiles don't have "On/Off" subtitles, use this version. |
 
 **Note:** On Android 8-11, subtitles are not displayed in any version due to Android's own limitations. Subtitles are available starting from Android 12.
 
@@ -41,7 +41,8 @@ Install the downloaded file. For initial installation, use the **Regular** versi
 
 ### Step 3: Grant WRITE_SECURE_SETTINGS Permission
 
-The app needs the `android.permission.WRITE_SECURE_SETTINGS` permission for instant NFC toggling - without it, the tile will redirect you to NFC system settings instead of toggling instantly. Successful permission grant is indicated by the instruction dialog disappearing when opening the regular version.
+> ⚠️ **Permission required for instant toggle**
+> The `android.permission.WRITE_SECURE_SETTINGS` permission is needed to switch NFC directly. Without it, the tile will only open NFC system settings.
 
 #### Option 1: Root (easiest)
 
@@ -93,7 +94,7 @@ Open Quick Settings, tap the pencil/edit icon, find the tile named **NFC** or **
 - **Long press** - open NFC system settings
 - **Tap without permission** - open NFC system settings
 
-State indication (on/off) works even without granted permission.
+The on/off state is shown even without the permission.
 
 ## Source Code
 
@@ -102,4 +103,4 @@ The source code is not published separately because the app was originally writt
 ## Credits
 
 - **Nfc Switcher** (lack006) - inspired the main window design
-- **Tiles** (rascarlo) - where I learned about using WRITE_SECURE_SETTINGS permission instead of root
+- **Tiles** (rascarlo) - where I found out about using WRITE_SECURE_SETTINGS permission instead of root
