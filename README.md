@@ -82,7 +82,7 @@ After granting permission, you can safely turn off Wireless debugging, "Disable 
 
 #### For Android 8-16+
 
-After successfully granting permission, install **NoLauncher** (or **NoSubtitle** for Android 16+) over the regular version.
+After successfully granting permission, install **NoLauncher** (or **NoSubtitle** for Android 16+) over the **Regular** version.
 
 ### Step 5: Add the Tile to Quick Settings
 
