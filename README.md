@@ -25,7 +25,7 @@ Primarily intended for AOSP-based devices (e.g. Pixel) that don’t include a na
 |:-------:|-------------|
 | [**Regular**](../../releases/latest/download/NFC_Tile.apk)<br>Android&nbsp;7.0+ | Has launcher icon and instruction dialog for granting permission. |
 | [**NoLauncher**](../../releases/latest/download/NFC_Tile_NoLauncher.apk)<br>Android&nbsp;8.0+ | No launcher icon, no instruction dialog. |
-| [**NoSubtitle**](../../releases/latest/download/NFC_Tile_NoSubtitle.apk)<br>Android&nbsp;8.0+ | Same as **NoLauncher**, but without a subtitle ("On/Off" text). For Android 16+ with the new Quick Settings design. If your system tiles don't have subtitles, use this version. |
+| [**NoSubtitle**](../../releases/latest/download/NFC_Tile_NoSubtitle.apk)<br>Android&nbsp;8.0+ | Same as **NoLauncher**, but without a subtitle ("On/Off" text). For example, for Android 16+ with the new Quick Settings design. If your system tiles don't have subtitles, use this version. |
 
 **Note:** On Android 7-11, subtitles are not displayed in any version due to Android's own limitations. Subtitles are available starting from Android 12.
 
