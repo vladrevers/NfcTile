@@ -34,16 +34,15 @@ Primarily intended for AOSP-based devices (e.g. Pixel) that don’t include a na
 
 ### Step 1: Download
 
-Download the required APK version by clicking the name in the table above or from the [Releases](../../releases) section.
+Download and install the APK by clicking its name in the table above or from the [Releases](../../releases) section:
 
-### Step 2: Install APK
+- **Regular** *(recommended for initial setup)* - required for **Android 7** and **Root** (grants permission with a single tap), and lets you easily verify that the permission is granted.
+- **NoLauncher / OneIcon / NoSubtitle** - on **Android 8+**, if you grant permission via **ADB**, you can install your preferred version right away and skip **Step 3**.
 
-Install the downloaded file. For initial installation, use the **Regular** version.
-
-### Step 3: Grant WRITE_SECURE_SETTINGS permission
+### Step 2: Grant WRITE_SECURE_SETTINGS permission
 
 > [!IMPORTANT]
-> **Permission required for instant toggle** - allows switching NFC directly. Without it, the tile will only open NFC system settings.
+> **Permission required for instant toggle** - allows switching NFC directly (the app's only permission). Without it, the tile will only open NFC system settings.
 
 #### Option 1: Root (easiest)
 
@@ -73,7 +72,9 @@ If you can't connect to a PC:
 
 After granting permission, you can safely turn off Wireless debugging, "Disable Permissions Monitoring", and Developer options.
 
-### Step 4: (Recommended) Hide the Icon
+### Step 3: (Recommended) Hide the Icon
+
+Select the method for your device (for **Android 8-9**, both options work, so use whichever you prefer):
 
 #### For Android 7-9
 
@@ -85,7 +86,7 @@ After granting permission, you can safely turn off Wireless debugging, "Disable 
 
 After successfully granting permission, install **NoLauncher**, **OneIcon**, or **NoSubtitle** over the **Regular** version.
 
-### Step 5: Add the Tile to Quick Settings
+### Step 4: Add the Tile to Quick Settings
 
 Open Quick Settings, tap the pencil/edit icon, find the tile named **NFC** or **NFC Tile**, and drag it to your desired position.
 
